@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>Blank Cordova Mobile App Project Template (Lite)</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        /* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+        
+        .none{
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+
+    <script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls, added during build -->
+    <script src="js/app.js"></script>           <!-- recommended location of your JavaScript code relative to other JS files -->
+    <script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <nav>
+    <div class="nav-wrapper  purple darken-1">
+        <a href="#" data-activates="slide-out" class="button-collapse">
+          <i class="Small mdi-navigation-menu"></i>
+        </a>
+    </div>
+  </nav>
+        <ul id="slide-out" class="side-nav full">
+  <li><a href="#!">Opcion 1</a></li>
+  <li><a href="#!">Opcion 2</a></li>
+</ul>
+    <div class="progress">
+          <div class="indeterminate"></div>
+      </div>
+    <div id="contenedor">
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <img src="images/logo.png" width="42" height="42" alt="" class="circle">
+                    <span class="title">Title</span>
+                      <p>First Line <br> Second Line</p>
+                <a href="#!" class="view-detail waves-effect waves-light btn secondary-content" data-id="2" onclick="Cargando()">Ver</a>
+            </li>
+        </ul>
+    <div id="page-contact" class="contact-2 none hoverable">
+        <div class="card small">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/logo.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Nombre Contacto</span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Nombre Contacto<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+        </div>
+    </div>  
+    </div>
+    <!-- Modal Structure -->
+  <div id="modal1" class="modal center-align">
+    <div class="modal-content">
+      <h4>Cargando...</h4>
+      <p>Cargando sus contactos</p>  
+      <div class="progress">
+          <div class="indeterminate"></div>
+      </div>
+  </div>
+</body>
+</html>
